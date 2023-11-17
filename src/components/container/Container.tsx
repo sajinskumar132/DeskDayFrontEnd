@@ -1,5 +1,4 @@
 import { Box, Tab, Tabs } from '@mui/material'
-import React from 'react'
 import Resources from '../resources/Resources'
 import SelectedResources from '../selectedResources/SelectedResources'
 import CloseIcon from '@mui/icons-material/Close';

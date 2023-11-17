@@ -7,6 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 import './selectedResource.css'
 import EmptyImage from '../../../src/utils/images/Empty.png'
 import { UpdateSelectedState } from '../../store/resourceSlicer';
+import { IResource } from '../../store/storeInterface';
 function SelectedResources() {
     const Resources = useSelector((state: RootState) => state.resource.SelectedResources)
     const [isEmpty, SetIsEmpty] = useState<boolean>(true)
@@ -26,7 +27,7 @@ function SelectedResources() {
                 :
                 <>
                     <div className='selectedResourceContainer'>
-                        {Resources && Resources.map((item: any) => (
+                        {Resources && Resources.map((item:IResource) => (
                             <>
                                 {item.selected ?
                                     <div key={item.id} className='SeletedMainCard'>

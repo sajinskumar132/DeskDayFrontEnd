@@ -8,6 +8,7 @@ import { ResourcesList } from '../../utils/dummyData';
 import { SetResources, UpdateSearchResource, UpdateSelectedState } from '../../store/resourceSlicer';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import SearchIcon from '@mui/icons-material/Search';
+import { IResource } from '../../store/storeInterface';
 function Resources() {
   const [open, setOpen] = React.useState(true);
   const handleClick = () => {
@@ -35,12 +36,11 @@ function Resources() {
               ),
             }}
             onChange={(e)=>{
-              console.log(e.target.value)
               dispatch(UpdateSearchResource(e.target.value))
             }}
           />
           <div className='resourceList'>
-            {Resources && Resources.map((item: any) => (
+            {Resources && Resources.map((item:IResource) => (
               <div className='profileCard' style={{ backgroundColor: item.selected ?'#F2FFF2':'' }} key={item.id} onClick={() => dispatch(UpdateSelectedState(item.id))}>
                 <div className='profile'>
                   <img src={item.image} className='profileImage' alt={item.image} />
