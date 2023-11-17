@@ -1,0 +1,81 @@
+
+.selectedMainContainer{
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.emptyContainer{
+    margin: auto;
+}
+.selectedResourceContainer{
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.selectedResourceContainer::-webkit-scrollbar {
+    display: none; 
+}
+.SeletedMainCard{
+    padding: 10px;
+    border-bottom: 1px solid silver;
+}
+.selectedProfileCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.selectedProfile{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.selectedActions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectedInputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.addIcon{
+    border-radius: 10px;
+    border:1px solid silver;
+    font-size: 35px !important;
+}
+.footerActions{
+    border-top: 1px solid silver;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+}
+.cancelButton{
+    background-color: white;
+    font-weight: 700;
+    padding: 10px 12px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+.saveButton{
+    background-color: #5563F5;
+    font-weight: 700;
+    padding: 10px 18px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.deleteIcon{
+    cursor: pointer;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: silver !important;
+}
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-width: 1px !important;
+    border-color: silver !important;
+}

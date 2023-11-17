@@ -1,0 +1,42 @@
+.mainResourceContainer {
+    height: 58vh;
+    border-right: 1px solid silver;
+    padding: 0px 8px;
+}
+.resourceList{
+    height: 48vh;
+    overflow-y: scroll;
+}
+.resourceList::-webkit-scrollbar {
+    display: none; 
+}
+.collapseheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.collapsedContainer{
+    padding: 0px 5px;
+}
+.inputField{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.profileCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.profileImage{
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,38 @@
+.mainContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid silver;
+    width: 55vw;
+    height: 70vh;
+    border-radius: 15px;
+}
+.mainHeader{
+    padding: 0px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    font-weight: 700;
+    font-family:'Segoe UI';
+    font-size: 20px;
+    line-height: 28px;
+}
+.mainTab .css-1aquho2-MuiTabs-indicator{
+    background-color: #5563F5;
+}
+.tab{
+    padding: 0px 10px;
+    width: 54vw;
+}
+.mainTab .tabs{
+    font-weight: 700;
+    color: #5563F5 !important;
+    font-family:'Segoe UI';
+}
+.mainSubContainer{
+    display: grid;
+    grid-template-columns: 30% auto;
+    height: 59vh;
+}
