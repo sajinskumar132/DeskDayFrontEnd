@@ -22,7 +22,7 @@ function SelectedResources() {
             {isEmpty ?
                 <div className='emptyContainer'>
                     <img src={EmptyImage} width={350} height={250} />
-                    <p>Select resources / groups to schedule date and time</p>
+                    <p className='emptyText'>Select resources / groups to schedule date and time</p>
                 </div>
                 :
                 <>
